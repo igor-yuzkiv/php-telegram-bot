@@ -58,7 +58,6 @@ class Telegram
     public function run () {
 
         $this->message = file_get_contents("php://input");
-        #file_put_contents(_STORAGE."telegram.txt", $this->message);
         $this->message = json_decode($this->message, true)['message'];
 
 

@@ -90,7 +90,6 @@ class DB
      */
     public function fetch_assoc ()
     {
-        file_put_contents(_STORAGE."telegram_db.txt", $this->sql);
         $sth =  $this->link->prepare($this->sql);
         $sth->execute();
         $result =  $sth->fetchAll(PDO::FETCH_ASSOC);
@@ -103,7 +102,6 @@ class DB
      */
     public function execute ($return_id = false)
     {
-        file_put_contents(_STORAGE."telegram_db.txt", $this->sql);
         $sth = $this->link->prepare($this->sql);
         $result = $sth->execute();
         return ($return_id) ? $this->link->lastInsertId() : $result ;

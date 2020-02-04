@@ -1,0 +1,25 @@
+{
+  "name": "IgorYuzkiv/php-telegram-bot",
+  "type": "library",
+  "description": "Telegram bot api library",
+  "keywords": ["telegram","bot","api"],
+  "homepage": "",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Igor Yuzkiv",
+      "email": "igor97w@gmail.com",
+      "homepage": "",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "^6.3",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "IgorYuzkiv\\TelegramBot\\": "src/"
+    }
+  }
+}

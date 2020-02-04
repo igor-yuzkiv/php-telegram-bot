@@ -1,5 +1,5 @@
 {
-  "name": "IgorYuzkiv/php-telegram-bot",
+  "name": "igor-yuzkiv/php-telegram-bot",
   "type": "library",
   "description": "Telegram bot api library",
   "keywords": ["telegram","bot","api"],
